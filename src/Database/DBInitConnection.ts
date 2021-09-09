@@ -6,10 +6,10 @@ class DBInitConnection {
             client: "pg",
             connection: {
                 host: "localhost",
-                user: process.env.USER,
-                password: process.env.PASSWORD,
-                database: process.env.DATABASE_NAME,
-                port: process.env.DB_PORT
+                user: "postgres",
+                password: "crypton10",
+                database: "postgres",
+                port: 5432
             }
         }
         return Knex(configData);

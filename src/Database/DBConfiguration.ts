@@ -1,5 +1,6 @@
 import { Knex } from "knex";
 import dbinitConnection from "./dbInitConnection";
+import dbTableInit from "./dbInitTable";
 
 class DBConfiguration {
     public dbConnector: Knex;
@@ -15,7 +16,7 @@ class DBConfiguration {
     }
 
     async init(){
-        // call to create tables
+        await dbTableInit.createTables(this.dbConnector);
     }
 }
 const dbConfig = new DBConfiguration();
