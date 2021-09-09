@@ -19,7 +19,9 @@ async function main() {
 
 import trackerController from "./Controllers/TrackerController";
 import insertNewVehicleMiddleware from "./Middlewares/InsertNewVehicleMiddleware";
+import insertVehicleMileageMiddleware from "./Middlewares/InsertVehicleMileageMiddleware";
 import dbConfig from "./Database/DBConfiguration";
 
 app.post("/fuel-Tracker/newVehicle/:id", insertNewVehicleMiddleware.validate, trackerController.insertNewVehicleById);
+app.post("/fuel-Tracker/mileage/:id", insertVehicleMileageMiddleware.validate, trackerController.insertMileageTimeSeriesData);
 main();
