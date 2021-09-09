@@ -3,9 +3,9 @@ import bodyParser from "body-parser";
 export const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-const port = process.env.PORT;
+const port = 3008;
 app.listen(port, ()=> {
-    console.log(`listening on port ${port}`);
+    console.log(`listening on port 3008`);
 })
 
 async function main() {
