@@ -4,7 +4,6 @@
     "version": "1.0.0",
     "dependencies": {
         "@types/knex": "^0.16.1",
-        "amqp-connection-manager": "^3.6.0",
         "amqplib": "^0.8.0",
         "express": "^4.17.1",
         "http-status-codes": "^2.1.4",
@@ -22,7 +21,6 @@
     },
     "main": "src/main.ts",
     "devDependencies": {
-        "@types/amqp-connection-manager": "^2.0.12",
         "@types/amqplib": "^0.8.2",
         "@types/express": "^4.17.13",
         "@types/node": "^16.6.1"
